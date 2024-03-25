@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-  </head>
-  <body>
-    <h1>Formulario de Contacto</h1>
-    <form>
-      <fieldset>
-        <legend>Datos personales</legend>
-        <label for="nombre">Nombre: </label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          autofocus
-          tabindex="1"
-        /><br />
-        <label for="apellidos">Apellidos: </label>
-        <input
-          type="text"
-          name="apellidos"
-          id="apellidos"
-          tabindex="2"
-        /><br />
-        <label for="edad">Edad: </label>
-        <input type="number" name="edad" id="edad" tabindex="3" /><br />
-      </fieldset>
-      <fieldset>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../styles/contacto.css">
+</head>
+
+<body>
+  <h1>Formulario de Contacto</h1>
+  <form>
+    <div class="formularioBoton">
+    <div class="formulario">
+      <div class="card">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="nombre">Nombre: </label>
+          <input class="inputs" type="text" name="nombre" id="nombre" autofocus tabindex="1" /><br />
+          <label for="apellidos">Apellidos: </label>
+          <input class="inputs" type="text" name="apellidos" id="apellidos" tabindex="2" /><br />
+          <label for="edad">Edad: </label>
+          <input class="inputs" type="number" name="edad" id="edad" tabindex="3" /><br />
+        </fieldset>
+      </div>
+      <div class="card">
+        <fieldset>
         <legend>Contacto</legend>
         <label for="correo">Correo electronico: </label>
-        <input
-          type="email"
-          id="correo"
-          name="correo"
-          placeholder="ejemplo@email.com"
-          tabindex="8"
-        /><br />
+        <input class="inputs" type="email" id="correo" name="correo" placeholder="ejemplo@email.com" tabindex="8" /><br />
         <label for="telefono">Telefono: </label>
-        <input
-          type="number"
-          id="telefono"
-          name="telefono"
-          placeholder="612423651"
-          pattern="[0-9]{10}"
-          tabindex="9"
-        /><br />
-      </fieldset>
-      <input type="submit" value="Enviar" />
-    </form>
-  </body>
+        <input class="inputs" type="number" id="telefono" name="telefono" placeholder="612423651" pattern="[0-9]{10}"
+          tabindex="9" /><br />
+        </fieldset>
+      </div>
+    </div>
+    <input class="botonEnviar" type="submit" value="Enviar" />
+  </div>
+  </form>
+</body>
+
 </html>
